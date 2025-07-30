@@ -1,4 +1,5 @@
-
+// const API_KEY = 'your_api_key_here';
+// const API_URL = 'your_api_url_here';
 const chatMessages = document.getElementById('chat-messages');
 const userInput = document.getElementById('user-input');
 const sendButton = document.getElementById('send-button');
