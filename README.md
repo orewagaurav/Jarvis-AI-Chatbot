@@ -2,7 +2,9 @@
 
 A web-based AI chatbot inspired by **J.A.R.V.I.S.** from Iron Man, built using **HTML, CSS, JavaScript**, and integrated with **Google's Gemini API** to simulate intelligent and conversational behavior.
 
-# [👀 Live Demo](https://orewagaurav.github.io/Jarvis-AI-Chatbot/)
+## [👀 Live Demo](https://orewagaurav.github.io/Jarvis-AI-Chatbot/)
+
+![Screenshots](image.png)
 
 ## 🧠 Features
 
@@ -13,17 +15,9 @@ A web-based AI chatbot inspired by **J.A.R.V.I.S.** from Iron Man, built using *
 - 🔔 Notification sound on response
 - 💻 Simple and responsive frontend
 
----
-
-## 📸 Preview
-
-> *(Insert screenshots here if available)*  
-> Or host it on GitHub Pages / Vercel and provide a live demo link.
-
----
-
 ## 📁 Project Structure
 
+```plaintext
 Jarvis-AI-Chatbot/
 ├── index.html       # Main HTML page
 ├── style.css        # Styling and UI layout
@@ -32,6 +26,7 @@ Jarvis-AI-Chatbot/
 ├── .env             # Optional: API key (for backend projects)
 ├── .gitignore       # Files to ignore in git (like config.js)
 └── README.md        # You’re reading it!
+```
 
 ---
 
@@ -44,3 +39,4 @@ Create a file named `config.js` in the project root:
 ```js
 // config.js
 const API_KEY = 'your_google_gemini_api_key_here';
+```
