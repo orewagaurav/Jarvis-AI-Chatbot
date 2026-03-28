@@ -8,10 +8,10 @@ function addMessage(message, isUser) {
     const messageDiv = document.createElement('div');
     messageDiv.classList.add('message');
     messageDiv.classList.add(isUser ? 'user-message' : 'bot-message');
-    
+
     const prefix = isUser ? 'Tony Stark: ' : 'JARVIS: ';
     messageDiv.textContent = prefix + message;
-    
+
     chatMessages.appendChild(messageDiv);
     chatMessages.scrollTop = chatMessages.scrollHeight;
 }
@@ -49,7 +49,7 @@ async function sendToGemini(message) {
         });
 
         const data = await response.json();
-        
+
         if (data.candidates && data.candidates[0].content.parts[0].text) {
             return data.candidates[0].content.parts[0].text;
         } else {
@@ -71,7 +71,7 @@ async function handleSend() {
     showLoading();
 
     const response = await sendToGemini(message);
-    
+
     removeLoading();
     addMessage(response, false);
 
