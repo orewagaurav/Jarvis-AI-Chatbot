@@ -4,8 +4,6 @@ A web-based AI chatbot inspired by **J.A.R.V.I.S.** from Iron Man, built using *
 
 ## [👀 Live Demo](https://orewagaurav.github.io/Jarvis-AI-Chatbot/)
 
-![Screenshots](image.png)
-
 ## 🧠 Features
 
 - 🗨️ Conversational AI experience with JARVIS personality
