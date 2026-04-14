@@ -131,14 +131,16 @@ function App() {
 
       <div className="chat-input">
         <input
+          id="user-input"
           type="text"
           value={input}
           onChange={(event) => setInput(event.target.value)}
           onKeyDown={handleKeyDown}
           placeholder="Command input, sir..."
-          disabled={!hasApiKey}
+          autoFocus
+          disabled={isLoading}
         />
-        <button type="button" onClick={handleSend} disabled={!hasApiKey || isLoading}>
+        <button id="send-button" type="button" onClick={handleSend} disabled={isLoading}>
           <i className="fas fa-paper-plane"></i>
         </button>
       </div>
@@ -146,7 +148,7 @@ function App() {
       {error && <div className="error-message">{error}</div>}
 
       <div className="footer">
-        <p>&copy; 2025 Gaurav Kumar. All Rights Reserved</p>
+        <p>&copy; 2026 Gaurav Kumar. All Rights Reserved</p>
         <div className="social-links">
           <a href="https://github.com/orewagaurav" target="_blank" rel="noreferrer">
             <i className="fab fa-github"></i>
